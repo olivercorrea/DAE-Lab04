@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Filtrado por Autor</title>
+</head>
+<body>
+    <h1>Obras de {{ autor.nombre }}</h1>
+    <ul>
+        {% for entrada in entradas %}
+            <li>
+                <h2>{{ entrada.titulo }}</h2>
+                <p>{{ entrada.contenido }}</p>
+                <p>Fecha de Publicación: {{ entrada.fecha_publicacion }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
