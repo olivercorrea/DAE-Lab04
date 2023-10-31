@@ -27,10 +27,6 @@ class App extends Component {
     this.borrar = this.borrar.bind(this);
   }
 
-  // borrar() {
-  //   // Agrega aquí la lógica para borrar un artículo si es necesario.
-  // }
-
   render() {
     return (
       <div className="container">
